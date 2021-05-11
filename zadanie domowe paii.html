@@ -1,0 +1,41 @@
+<html>
+<title>Obliczenia matematyczne</title>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="cyan">
+
+<script type="text/javascript">
+function licz(formularz){
+if(formularz.a.value=="" || formularz.b.value=="")
+alert("Proszę podać poprawne liczby");
+else
+{
+    a=parseFloat(formularz.a.value);
+    b=parseFloat(formularz.b.value);
+    formularz.c.value=a*b;
+    formularz.d.value=a/b;
+    formularz.e.value=a+b;
+    formularz.f.value=a-b;
+    formularz.g.value=a*b;
+    formularz.h.value=2*a+2*b;
+}
+}
+</script>
+<img src=zd1.jpg>
+<form name="formularz1" action="">
+    Podaj pierwszą liczbę:<br><input type="text" name="a"<br><br>
+    Podaj drugą liczbę:<br><input type="text" name="b"<br><br>
+    <br><input type"button" value="Przelicz" onClick="licz(this.form)"><br><br>
+    <b>Wyniki:</b><br><br>
+    Mnożenie:<br><input type"text" name="c" disabled><br><br>
+    Dzielenie:<br><input type"text" name="d" disabled><br><br>
+    Dodawanie:<br><input type"text" name="e" disabled><br><br>
+    Odejmowanie:<br><input type"text" name="f" disabled><br><br>
+    <b>Wynik pola i obwodu prostokąta dla tych dwóch liczb:</b> <br><br>
+    Pole:<br><input type"text" name="g" disabled><br><br>
+    Obwód:<br><input type"text" name="h" disabled><br><br>
+    <img src=zd2.jpg>
+</form>
+</body>
+</html>
